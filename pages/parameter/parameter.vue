@@ -5,17 +5,19 @@
 			<view class="ui-table table-border table-full mt-3 table-radius sm">
 				<view class="ui-table-header">
 					<view class="ui-table-tr">
-						<view class="ui-table-th">属性名</view>
-						<view class="ui-table-th text-center">类型/默认值</view>
+						<view class="ui-table-th">药品名</view>
+						<view class="ui-table-th text-center">数量</view>
 						<view class="ui-table-th">说明</view>
 					</view>
-				</view>
+				</view> 
 				<view class="ui-table-body">
 					<view class="ui-table-tr" v-for="(item, index) in parameter" :key="index">
 						<view class="ui-table-td">{{ item.name }}</view>
 						<view class="ui-table-td text-center">
 							<view class="ui-tag block sm bg-blue-thin">[{{ item.type }}]</view>
-							<view class="ui-tag block sm bg-grey-thin">{{ item.default }}</view>
+							<view class="ui-tag block sm bg-grey-thin">{{ item.default }}</view> <!-- #ifdef APP-NVUE -->
+							
+							<!-- #endif -->
 						</view>
 						<view class="ui-table-td">{{ item.info }}</view>
 					</view>

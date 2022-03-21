@@ -2,7 +2,7 @@
 	<ui-sys bg="ui-BG" :footer="false">
 		<ui-navbar back></ui-navbar>
 		<view class="p-5">
-			<view class="text-xxl"><view class="text-bold py-2">欢迎登录Colorui组件库</view></view>
+			<view class="text-xxl"><view class="text-bold py-2">欢迎登录医疗医生端</view></view>
 			<view class="mt-5"><ui-tab v-model="tabCur" :tab="['帐号户登录', '验证码登录']" tpl="long" dot="radius" textCur="text-lg" text="text-lg"></ui-tab></view>
 			<block v-if="tabCur == 0">
 				<ui-form ui="ui-BG mt-4">
